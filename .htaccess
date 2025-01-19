@@ -1,0 +1,15 @@
+# Disable directory listing
+Options -Indexes
+
+RewriteEngine On
+
+# Remove .html extensions
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+
+# Return 404 for any unmatched files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . - [R=404,L]
