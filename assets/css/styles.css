@@ -1,0 +1,154 @@
+:root, [data-bs-theme=dark] {
+  --bs-blue: #2d43d6;
+  --bs-indigo: #9527eb;
+  --bs-red: #db2425;
+  --bs-orange: #d88628;
+  --bs-green: #68b423;
+  --bs-yellow: #d4d828;
+  --bs-softgreen: #23b466;
+  --bs-softblue: #3498DB;
+  --bs-dark: #0f0f0f;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-body-bg: #171717;
+  --bs-body-bg-rgb: 23, 23, 23;
+  --bs-body-color: white;
+  --bs-body-secondary-color: #5E5E5E;
+  --bs-border-radius: 10px;
+  --bs-body-font-family: Poppins, sans-serif;
+}
+
+.form-control::placeholder {
+  color: var(--bs-secondary);
+  font-size: 16px;
+}
+
+.bg-dark {
+  background-color: var(--bs-dark) !important;
+}
+
+.text-secondary {
+  color: var(--bs-body-secondary-color);
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.contact-input {
+  height: 50px !important;
+}
+
+.line-height-36 {
+  line-height: 36px;
+}
+
+.fw-black {
+  font-weight: 900 !important;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.page-margin {
+  margin-top: 250px;
+}
+
+.skill-btn-white {
+  outline: 2px dashed #fff;
+  color: white;
+  outline-offset: 1px;
+}
+
+.skill-btn-blue {
+  outline: 2px dashed var(--bs-blue);
+  color: var(--bs-blue);
+  outline-offset: 1px;
+}
+
+.skill-btn-indigo {
+  outline: 2px dashed var(--bs-indigo);
+  color: var(--bs-indigo);
+  outline-offset: 1px;
+}
+
+.skill-btn-red {
+  outline: 2px dashed var(--bs-red);
+  color: var(--bs-red);
+  outline-offset: 1px;
+}
+
+.skill-btn-orange {
+  outline: 2px dashed var(--bs-orange);
+  color: var(--bs-orange);
+  outline-offset: 1px;
+}
+
+.skill-btn-green {
+  outline: 2px dashed var(--bs-green);
+  color: var(--bs-green);
+  outline-offset: 1px;
+}
+
+.skill-btn-yellow {
+  outline: 2px dashed var(--bs-yellow);
+  color: var(--bs-yellow);
+  outline-offset: 1px;
+}
+
+.skill-btn-softgreen {
+  outline: 2px dashed var(--bs-softgreen);
+  color: var(--bs-softgreen);
+  outline-offset: 1px;
+}
+
+.skill-btn-softblue {
+  outline: 2px dashed var(--bs-softblue);
+  color: var(--bs-softblue);
+  outline-offset: 1px;
+}
+
+.project-card-img {
+  transition: 0.5s;
+  opacity: 80%;
+}
+
+.project-card-img:hover {
+  opacity: 10%;
+}
+
+/** Animations */
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.step {
+  opacity: 0;
+  transition: 0.5s;
+}
